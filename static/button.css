@@ -1,0 +1,18 @@
+.button {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(50%,#e0e0e0), color-stop(50%,#d3d3d3), color-stop(100%,#d3d3d3));
+    background: -moz-linear-gradient(center top, #e0e0e0 0%, #e0e0e0 50%, #d3d3d3 50%, #d3d3d3 100%);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: Helvetica Neue;
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+}
+.button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f06196), color-stop(50%,#ef6196), color-stop(50%,#ee4d88), color-stop(100%,#ee4d88));
+    background: -moz-linear-gradient(center top, #f06196 0%, #ef6196 50%, #ee4d88 50%, #ee4d88 100%);
+    color: #FFFFFF;
+}
