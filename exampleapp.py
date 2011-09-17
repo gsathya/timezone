@@ -117,7 +117,7 @@ def index():
         friends = fb_call('me/friends',
                           args={'access_token': access_token, 'limit': 4})
         photos = fb_call('me/photos',
-                         args={'access_token': access_token, 'limit': 16})
+                         args={'access_token': access_token, 'limit': 4})
 
         redir = get_home() + 'close/'
         POST_TO_WALL = ("https://www.facebook.com/dialog/feed?redirect_uri=%s&"
@@ -139,7 +139,7 @@ def index():
             me=me, POST_TO_WALL=POST_TO_WALL, SEND_TO=SEND_TO)
         '''
         '''return render_template('index1.html',app=app)'''
-        return render_template('result.html',app=app,photos=photos,me=me)
+        return render_template('result1.html',app=app,photos=photos,me=me)
 
     else:
         print oauth_login_url(next_url=get_home())

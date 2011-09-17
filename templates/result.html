@@ -57,12 +57,12 @@
       <div id="wrapper">
         <ul class="photos">
           {% for photo in photos.data %}
-          <li img src={{photo.picture}} />
+          <img src={{photo.picture}} />
             <a href="#" onclick="window.open('http://www.facebook.com/{{photo.id}}')">
             </a>
-          </li>
+         
           {% endfor %}
-        </ul>
+        
       </div>
     </div>
   </div>
