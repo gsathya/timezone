@@ -99,6 +99,13 @@
 	    }
 	);
     });
+    
+    function showAlert() {
+    var d = new Date();
+    localOffset = d.getTimezoneOffset();
+    alert('offset is'+localOffset);
+    }
+
   </script>
 </head>
 <body>
@@ -107,11 +114,11 @@
       <div id="navpanel">
 	<ul>
 	  	<li>
-			    <a href="">
+			    <a href="" onClick="showAlert()">
 
 			      <div class="navbutton">
 				<img src="../static/images/awake.png"/>
-				<p>I'm Awake</p>
+				<p class="awake">I'm Awake</p>
 			      </div>
 			    </a>
 			  </li>
