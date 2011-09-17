@@ -141,7 +141,7 @@ def index():
         '''return render_template('index1.html',app=app)'''
         return render_template('result.html',app=app,photos=photos,me=me)
 
-  else:
+    else:
         print oauth_login_url(next_url=get_home())
         return redirect(oauth_login_url(next_url=get_home()))
 
