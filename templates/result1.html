@@ -118,11 +118,11 @@
     <div id="wrapper">
       <div id="navpanel">
 	<ul class="photos">
-          {% for photo in photos.data %}          
+          {% for friend in app_friends %}          
           <li>
             
-            <a href="#" onclick="window.open('http://www.facebook.com/{{photo.id}}')">
-            <img src={{photo.picture}}/>
+            <a href="#" onclick="window.open('http://www.facebook.com/{{friend.id}}')">
+            <img src="https://graph.facebook.com/{{friend.uid}}/picture?type=square">
             </a>
           </li>
           {% endfor %}
