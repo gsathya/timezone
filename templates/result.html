@@ -57,13 +57,8 @@
       <div id="wrapper">
         <ul class="photos">
           {% for photo in photos.data %}
-            {% if loop.index0%4 == 0 %}
-          <li class="first-column" style="background-image: url({{photo.picture}})">
-            {% else %}
-          <li style="background-image: url({{photo.picture}})">
-            {% endif %}
+          <li img src={{photo.picture}} />
             <a href="#" onclick="window.open('http://www.facebook.com/{{photo.id}}')">
-              {{photo.name}}
             </a>
           </li>
           {% endfor %}
