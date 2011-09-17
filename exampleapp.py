@@ -4,6 +4,7 @@ import os.path
 import simplejson as json
 import urllib
 import urllib2
+import pytz
 
 from flask import Flask, request, redirect, render_template
 
@@ -91,6 +92,8 @@ def fql(fql, token, args=None):
 def fb_call(call, args=None):
     return json.loads(urllib2.urlopen("https://graph.facebook.com/" + call +
                                       '?' + urllib.urlencode(args)).read())
+def get_country(country_code):
+    return pytz.country_names[country_code]
 
 app = Flask(__name__)
 app.config.from_object(__name__)
