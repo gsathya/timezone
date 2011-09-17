@@ -139,7 +139,7 @@ def index():
             me=me, POST_TO_WALL=POST_TO_WALL, SEND_TO=SEND_TO)
         '''
         '''return render_template('index1.html',app=app)'''
-        return render_template('result1.html',app=app,app_friends=app_friends,me=me,place="Costa Rica")
+        return render_template('result1.html',app=app,app_friends=app_friends,me=me,place="San Francisco")
 
     else:
         print oauth_login_url(next_url=get_home())
