@@ -116,16 +116,12 @@
   <div id="header">
     <div id="wrapper">
       <div id="navpanel">
-		<ul class="photos">
-          {% for photo in photos.data %}
-            
-          
-            
+	<ul class="photos">
+          {% for photo in photos.data %}          
           <li>
             
             <a href="#" onclick="window.open('http://www.facebook.com/{{photo.id}}')">
             <img src={{photo.picture}}/>
-				<p>  {{photo.name}} </p>
             </a>
           </li>
           {% endfor %}
