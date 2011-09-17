@@ -119,12 +119,13 @@
 		<ul class="photos">
           {% for photo in photos.data %}
             
-          <img src={{photo.picture}}/>
+          
             
-          <li style="background-image: url({{photo.picture}})">
+          <li>
             
             <a href="#" onclick="window.open('http://www.facebook.com/{{photo.id}}')">
-            <p>  {{photo.name}} </p>
+            <img src={{photo.picture}}/>
+				<p>  {{photo.name}} </p>
             </a>
           </li>
           {% endfor %}
